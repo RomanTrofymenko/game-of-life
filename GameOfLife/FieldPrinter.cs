@@ -11,7 +11,7 @@ namespace GameOfLife
             {
                 for (var j = 0; j < field.GetLength(1); j++)
                 {
-                    output.Append(field[i, j] ? "@ " : "* ");
+                    output.Append(field[i, j] ? "██" : "░░");
                 }
                 output.AppendLine();
             }
