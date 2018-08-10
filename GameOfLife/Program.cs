@@ -8,12 +8,12 @@ namespace GameOfLife
     {
         static void Main(string[] args)
         {
-            var field = new Generator().GenerateField(40);
+            var field = new RandomGenerator().GenerateField(40);
             var printer = new FieldPrinter();
             var game = new Game();
             while (true)
             {
-                Console.WriteLine(printer.Print(field));
+                Console.WriteLine(printer.Print(field, "██", "░░"));
                 Thread.Sleep(300);
                 field = game.Progress(field);
                 Console.Clear();

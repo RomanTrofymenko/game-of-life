@@ -2,7 +2,7 @@ using System;
 
 namespace GameOfLife
 {
-    public class Generator
+    public class RandomGenerator
     {
         public bool[,] GenerateField(int size)
         {
