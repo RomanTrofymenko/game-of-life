@@ -8,7 +8,7 @@ namespace GameOfLife
     {
         static void Main(string[] args)
         {
-            var field = new RandomGenerator().GenerateField(40);
+            var field = new RandomFieldGenerator().Generate(40);
             var printer = new FieldPrinter();
             var game = new Game();
             while (true)

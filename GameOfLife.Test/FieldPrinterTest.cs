@@ -16,6 +16,15 @@ namespace GameOfLife.Test
 
             StringAssert.Contains(result, ".");
         }
-        
+
+        [TestMethod]
+        public void Print_ReturnsLiveCellSymbols_WhenLiveCellsPresent()
+        {
+            var subject = new FieldPrinter();
+
+            var result = subject.Print(new bool[,]{{true}}, "!", ".");
+
+            StringAssert.Contains(result, "!");
+        }
     }
 }
